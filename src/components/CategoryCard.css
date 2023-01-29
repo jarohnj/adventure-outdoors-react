@@ -1,0 +1,12 @@
+.category-card {
+    columns: 4 200px;
+    column-gap: normal;
+    font-family: Garamond;
+    font-weight: 200;
+    font-style: normal;
+    text-align: center;
+    text-decoration: solid;
+    justify-content: center;
+    margin-left: 135px;
+}
+
