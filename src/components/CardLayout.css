@@ -1,11 +1,12 @@
 .card-layout {
-    columns: 4 200px;
-    column-gap: normal;
     font-family: Garamond;
     font-weight: 200;
     font-style: normal;
     text-align: center;
     text-decoration: solid;
     justify-content: center;
+    max-height: fit-content;
+    max-width: fit-content;
 }
+
 

@@ -1,7 +1,8 @@
 import { Fragment } from "react";
 import { Link, Outlet } from "react-router-dom";
 import Logo from "../../images/logo.jpg";
-import { FormControl, InputGroup, Nav, Navbar, Stack } from "react-bootstrap";
+import { Nav, Navbar, Stack } from "react-bootstrap";
+import SearchBar from "../SearchBar";
 
 const Navigation = () => {
   return (
@@ -19,9 +20,9 @@ const Navigation = () => {
           </Navbar.Brand>
         </Link>
         <Stack direction="horizontal" gap={5}>
-          <Nav className="justify-content-center text-center">
-            <Link className="nav-link" to="/equipment">
-              Equipment
+          <Nav >
+            <Link className="nav-link" to="/categories">
+              Categories
             </Link>
 
             <Link className="nav-link" to="/account">
@@ -36,12 +37,7 @@ const Navigation = () => {
               Login
             </Link>
           </Nav>
-          <InputGroup
-            className=""
-            style={{ width: 300, justifyContent: "right" }}
-          >
-            <FormControl placeholder="Quick Search"></FormControl>
-          </InputGroup>
+      
         </Stack>
       </Navbar>
       <Outlet />

@@ -1,42 +1,38 @@
-import Canoe from "../images/Canoe.jpg";
 import CardLayout from "./CardLayout";
-import Snow from "../images/Snowboard.jpg";
-import Camping from "../images/Camping.jpg";
-import Climbing from "../images/Climbing.jpg";
 import "./CardLayout.css";
 import { Row } from "react-bootstrap";
 
-const Equipment = () => {
+const CategoryList = () => {
   return (
     <div>
-      <h1 className="h1">Categories</h1>
-      <Row xs="auto" md="auto" className="card-layout g-4">
+      <h1 className="h1">All Categories</h1>
+      <Row xs="auto" md="auto" style={{columnCount: 4}} className="card-layout g-4">
         <CardLayout
-          image={Canoe}
+          image="images/Canoe.jpg"
           title="Water Gear"
           text="Explore the Water!"
-          link="/equipment/water-gear"
+          link="/categories/water-gear"
           buttonText="Explore!"
         />
         <CardLayout
-          image={Snow}
+          image="images/Snowboard.jpg"
           title="Snow Gear"
           text="Explore the Snow!"
-          link="/equipment/snow-gear"
+          link="/categories/snow-gear"
           buttonText="Explore!"
         />
         <CardLayout
-          image={Camping}
+          image="images/Camping.jpg"
           title="Camping Gear"
           text="Go Camping!"
-          link="/equipment/camping-gear"
+          link="/categories/camping-gear"
           buttonText="Explore!"
         />
         <CardLayout
-          image={Climbing}
+          image="images/Climbing.jpg"
           title="Climbing Gear"
           text="Go Climbing!"
-          link="/equipment/climbing-gear"
+          link="/categories/climbing-gear"
           buttonText="Explore!"
         />
       </Row>
@@ -44,4 +40,4 @@ const Equipment = () => {
   );
 };
 
-export default Equipment;
+export default CategoryList;
